@@ -50,11 +50,31 @@
                         <segue destination="SiA-E6-Yc8" kind="push" identifier="FivePoint" id="5cS-0f-BcH"/>
                         <segue destination="vn1-vH-r9G" kind="push" identifier="Pie" id="LAJ-An-P4x"/>
                         <segue destination="ouo-Uj-ahg" kind="push" identifier="Radar" id="QZn-1v-UdL"/>
+                        <segue destination="qYl-nt-Mh0" kind="push" identifier="Circle" id="yYH-wc-Sb8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydl-er-VBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="98" y="700"/>
+        </scene>
+        <!--Circle View Controller-->
+        <scene sceneID="B2s-zd-aRn">
+            <objects>
+                <viewController id="qYl-nt-Mh0" customClass="CHCircleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="miT-gc-vew"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cjz-nu-OkD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UPO-2G-t1p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CQs-6s-2y6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReY-jh-kHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="1483"/>
         </scene>
         <!--Pie Controller-->
         <scene sceneID="0Ru-pV-rsp">

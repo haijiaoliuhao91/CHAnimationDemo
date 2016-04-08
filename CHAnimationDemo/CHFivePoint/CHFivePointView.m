@@ -17,38 +17,7 @@
     }
     return self;
 }
-//// 绘制半圆路径Demo
-//- (void)drawRect:(CGRect)rect {
-//    UIColor *blue = [UIColor blueColor];
-//    [blue set];
-//    UIBezierPath *path = [UIBezierPath bezierPath];
-//    CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
-//    [path moveToPoint:CGPointMake(self.frame.size.width-50, self.frame.size.height/2)];
-//    [path addArcWithCenter:center radius:self.frame.size.width/3 startAngle:DEGREES_TO_RADIANS(0) endAngle:DEGREES_TO_RADIANS(90) clockwise:YES];
-//    [path addArcWithCenter:center radius:self.frame.size.width/3 startAngle:DEGREES_TO_RADIANS(90) endAngle:DEGREES_TO_RADIANS(180) clockwise:YES];
-//    [path addArcWithCenter:center radius:self.frame.size.width/3 startAngle:DEGREES_TO_RADIANS(180) endAngle:DEGREES_TO_RADIANS(-90) clockwise:YES];
-//    [path addArcWithCenter:center radius:self.frame.size.width/3 startAngle:DEGREES_TO_RADIANS(-90) endAngle:DEGREES_TO_RADIANS(0) clockwise:YES];
-//
-//    CAShapeLayer *shape= [CAShapeLayer layer];
-//    shape.path = path.CGPath;
-//    shape.lineWidth = 2;
-//    shape.fillColor = [UIColor clearColor].CGColor;
-//    shape.strokeColor = blue.CGColor;
-//    POPBasicAnimation *panimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
-//    panimation.fromValue = @(0);
-//    panimation.toValue = @(1);
-//    panimation.duration = 1.5;
-//    panimation.repeatForever = YES;
-//    [shape pop_addAnimation:panimation forKey:@"p"];
-//    POPBasicAnimation *panimation2 = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeStart];
-//    panimation2.fromValue = @(-1);
-//    panimation2.toValue = @(1);
-//    panimation2.duration = 1.5;
-//    panimation2.repeatForever = YES;
-//    [shape pop_addAnimation:panimation2 forKey:@"r"];
-//    [self.layer addSublayer:shape];
-//
-//}
+
 
 // 绘制五角星Demo
 - (void)drawRect:(CGRect)rect {

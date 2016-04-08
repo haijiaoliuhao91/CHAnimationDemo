@@ -19,6 +19,8 @@
 		067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAC1CB4B4B8000F52BC /* CHPieController.m */; };
 		067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */; };
 		067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCB31CB4B9C7000F52BC /* CHRadar.m */; };
+		06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160A1CB78850008C1E7E /* CHCircleHUD.m */; };
+		06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */; };
 		A786DBC59475621FAE2BAF5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C5CC2A42C826BF5CC8CCD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,10 @@
 		067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadarController.m; sourceTree = "<group>"; };
 		067FDCB21CB4B9C7000F52BC /* CHRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRadar.h; sourceTree = "<group>"; };
 		067FDCB31CB4B9C7000F52BC /* CHRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadar.m; sourceTree = "<group>"; };
+		06C516091CB78850008C1E7E /* CHCircleHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleHUD.h; sourceTree = "<group>"; };
+		06C5160A1CB78850008C1E7E /* CHCircleHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleHUD.m; sourceTree = "<group>"; };
+		06C5160C1CB788EB008C1E7E /* CHCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleViewController.h; sourceTree = "<group>"; };
+		06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleViewController.m; sourceTree = "<group>"; };
 		E3001B17A5E7637CA8161B79 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E475E4DC56E048C294388E6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA5C5CC2A42C826BF5CC8CCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +71,7 @@
 		067FDC791CB4A2DE000F52BC = {
 			isa = PBXGroup;
 			children = (
+				06C516081CB7883E008C1E7E /* CHCircleHUD */,
 				067FDCB11CB4B9BA000F52BC /* CHRadar */,
 				067FDCA71CB4B48D000F52BC /* CHDrewPieView */,
 				067FDCA31CB4AA42000F52BC /* CHFivePoint */,
@@ -92,6 +99,8 @@
 				067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */,
 				067FDCAB1CB4B4B8000F52BC /* CHPieController.h */,
 				067FDCAC1CB4B4B8000F52BC /* CHPieController.m */,
+				06C5160C1CB788EB008C1E7E /* CHCircleViewController.h */,
+				06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */,
 				067FDC881CB4A2DF000F52BC /* AppDelegate.h */,
 				067FDC891CB4A2DF000F52BC /* AppDelegate.m */,
 				067FDC8B1CB4A2DF000F52BC /* ViewController.h */,
@@ -141,6 +150,16 @@
 			);
 			name = CHRadar;
 			path = CHAnimationDemo/CHRadar;
+			sourceTree = "<group>";
+		};
+		06C516081CB7883E008C1E7E /* CHCircleHUD */ = {
+			isa = PBXGroup;
+			children = (
+				06C516091CB78850008C1E7E /* CHCircleHUD.h */,
+				06C5160A1CB78850008C1E7E /* CHCircleHUD.m */,
+			);
+			name = CHCircleHUD;
+			path = CHAnimationDemo/CHCircleHUD;
 			sourceTree = "<group>";
 		};
 		A96BA1B32ADA230B639B71EA /* Pods */ = {
@@ -283,8 +302,10 @@
 			files = (
 				067FDC8D1CB4A2DF000F52BC /* ViewController.m in Sources */,
 				067FDCA61CB4AA91000F52BC /* CHFivePointView.m in Sources */,
+				06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */,
 				067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */,
 				067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */,
+				06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */,
 				067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */,
 				067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */,
 				067FDCAA1CB4B48D000F52BC /* CHDrewPieView.m in Sources */,
