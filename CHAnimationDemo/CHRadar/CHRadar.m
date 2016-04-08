@@ -52,8 +52,6 @@
     _imageView.image = image;
 }
 - (void)start{
-
-
          if ([self.delegate respondsToSelector:@selector(ch_radarWillStart)]) {
              [self.delegate ch_radarWillStart];
          }
@@ -67,12 +65,10 @@
              if (i == 0) {
                  theInterval = 0 ;
              }
-           NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:theInterval target:self selector:@selector(startQueue) userInfo:nil repeats:NO];
-            [_timers addObject:timer];
+           NSTimer *graceTimer = [NSTimer scheduledTimerWithTimeInterval:theInterval target:self selector:@selector(startQueue) userInfo:nil repeats:NO];
+            [_timers addObject:graceTimer];
 
          }
-    
-
 }
 - (void)startQueue{
     if (_queue) {
@@ -147,6 +143,9 @@
          }
      }
  
+}
+- (void)startAnimation{
+    [self start];
 }
 - (void)stopAnimaition{
     [self stop];
