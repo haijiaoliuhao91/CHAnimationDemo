@@ -30,10 +30,10 @@
     UIBezierPath *path = [UIBezierPath bezierPath];
     CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     [path moveToPoint:CGPointMake(self.frame.size.width, self.frame.size.height/2)];
-    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(0) endAngle:DEGREES_TO_RADIANS(90) clockwise:YES];
-    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(90) endAngle:DEGREES_TO_RADIANS(180) clockwise:YES];
-    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(180) endAngle:DEGREES_TO_RADIANS(-90) clockwise:YES];
-    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(-90) endAngle:DEGREES_TO_RADIANS(0) clockwise:YES];
+    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(0) endAngle:DEGREES_TO_RADIANS(180) clockwise:YES];
+    [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(180) endAngle:DEGREES_TO_RADIANS(0) clockwise:YES];
+   // [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(180) endAngle:DEGREES_TO_RADIANS(0) clockwise:YES];
+   // [path addArcWithCenter:center radius:self.frame.size.width/2 startAngle:DEGREES_TO_RADIANS(-90) endAngle:DEGREES_TO_RADIANS(0) clockwise:YES];
 
     CAShapeLayer *shape= [CAShapeLayer layer];
     shape.path = path.CGPath;

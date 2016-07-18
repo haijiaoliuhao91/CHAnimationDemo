@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */; };
+		0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D9011D30F9160017D9C6 /* CHHeartViewController.m */; };
 		067FDC871CB4A2DF000F52BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC861CB4A2DF000F52BC /* main.m */; };
 		067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC891CB4A2DF000F52BC /* AppDelegate.m */; };
 		067FDC8D1CB4A2DF000F52BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC8C1CB4A2DF000F52BC /* ViewController.m */; };
@@ -19,12 +21,17 @@
 		067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAC1CB4B4B8000F52BC /* CHPieController.m */; };
 		067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */; };
 		067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCB31CB4B9C7000F52BC /* CHRadar.m */; };
+		06C1DF281D324F2000C25FE3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1DF271D324F2000C25FE3 /* GLKit.framework */; };
 		06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160A1CB78850008C1E7E /* CHCircleHUD.m */; };
 		06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */; };
 		A786DBC59475621FAE2BAF5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C5CC2A42C826BF5CC8CCD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0638D8FD1D30F8EF0017D9C6 /* CHHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartView.h; sourceTree = "<group>"; };
+		0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartView.m; sourceTree = "<group>"; };
+		0638D9001D30F9160017D9C6 /* CHHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartViewController.h; sourceTree = "<group>"; };
+		0638D9011D30F9160017D9C6 /* CHHeartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartViewController.m; sourceTree = "<group>"; };
 		067FDC821CB4A2DF000F52BC /* CHAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067FDC861CB4A2DF000F52BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		067FDC881CB4A2DF000F52BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadarController.m; sourceTree = "<group>"; };
 		067FDCB21CB4B9C7000F52BC /* CHRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRadar.h; sourceTree = "<group>"; };
 		067FDCB31CB4B9C7000F52BC /* CHRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadar.m; sourceTree = "<group>"; };
+		06C1DF271D324F2000C25FE3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		06C516091CB78850008C1E7E /* CHCircleHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleHUD.h; sourceTree = "<group>"; };
 		06C5160A1CB78850008C1E7E /* CHCircleHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleHUD.m; sourceTree = "<group>"; };
 		06C5160C1CB788EB008C1E7E /* CHCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleViewController.h; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C1DF281D324F2000C25FE3 /* GLKit.framework in Frameworks */,
 				A786DBC59475621FAE2BAF5B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,9 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0638D8FD1D30F8EF0017D9C6 /* CHHeartView.h */,
+				0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */,
+			);
+			name = CHHeartAnimation;
+			path = CHAnimationDemo/CHHeartAnimation;
+			sourceTree = "<group>";
+		};
 		067FDC791CB4A2DE000F52BC = {
 			isa = PBXGroup;
 			children = (
+				0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */,
 				06C516081CB7883E008C1E7E /* CHCircleHUD */,
 				067FDCB11CB4B9BA000F52BC /* CHRadar */,
 				067FDCA71CB4B48D000F52BC /* CHDrewPieView */,
@@ -93,6 +113,8 @@
 		067FDC841CB4A2DF000F52BC /* CHAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0638D9001D30F9160017D9C6 /* CHHeartViewController.h */,
+				0638D9011D30F9160017D9C6 /* CHHeartViewController.m */,
 				067FDCA01CB4AA23000F52BC /* CHFivePointController.h */,
 				067FDCA11CB4AA23000F52BC /* CHFivePointController.m */,
 				067FDCAE1CB4B6AE000F52BC /* CHRadarController.h */,
@@ -174,6 +196,7 @@
 		EC5C5D6EBE32A14DE0F20923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06C1DF271D324F2000C25FE3 /* GLKit.framework */,
 				FA5C5CC2A42C826BF5CC8CCD /* libPods.a */,
 			);
 			name = Frameworks;
@@ -302,12 +325,14 @@
 			files = (
 				067FDC8D1CB4A2DF000F52BC /* ViewController.m in Sources */,
 				067FDCA61CB4AA91000F52BC /* CHFivePointView.m in Sources */,
+				0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */,
 				06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */,
 				067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */,
 				067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */,
 				06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */,
 				067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */,
 				067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */,
+				0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */,
 				067FDCAA1CB4B48D000F52BC /* CHDrewPieView.m in Sources */,
 				067FDC871CB4A2DF000F52BC /* main.m in Sources */,
 				067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */,

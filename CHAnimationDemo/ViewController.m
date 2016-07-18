@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD"];
+    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD",@"Heart Demo"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -44,6 +44,9 @@
     }else if(indexPath.row == 3){
         
         [self performSegueWithIdentifier:@"Circle" sender:self];
+    }else if(indexPath.row == 4){
+        
+        [self performSegueWithIdentifier:@"Heart" sender:self];
     }
 
 }
