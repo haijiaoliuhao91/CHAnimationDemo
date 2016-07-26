@@ -5,7 +5,7 @@
 //  Created by Chausson on 16/3/16.
 //  Copyright © 2016年 Chausson. All rights reserved.
 //
-
+#import <pop/POP.h>
 #import "CHDrewPieView.h"
 //1。弧度转角度
 #define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
@@ -45,7 +45,17 @@
         [self drewPieWithStartAngle:startA endAngle:endA fillColor:color];
 
     }];
-
+    POPSpringAnimation *panimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+  //  panimation.fromValue = @(0);
+    panimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(.0, 0)];
+  //  panimation.toValue = @(1);
+    panimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
+    panimation.springSpeed = 3.25;
+    panimation.dynamicsTension = 10.f;
+    panimation.springBounciness = 5.5f;
+//    panimation.repeatForever = YES;
+   // panimation.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    [self.layer pop_addAnimation:panimation forKey:@"p"];
     
 }
 // 根据条件绘制饼图
@@ -68,6 +78,7 @@
     animation.toValue = @(0.2);
     animation.duration = 5.5;
     [shape addAnimation:animation forKey:@"begin"];
+    
 
 }
 

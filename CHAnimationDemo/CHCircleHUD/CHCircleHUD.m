@@ -45,13 +45,21 @@
     panimation.toValue = @(1);
     panimation.duration = 1.25;
     panimation.repeatForever = YES;
+    panimation.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
     [shape pop_addAnimation:panimation forKey:@"p"];
     POPBasicAnimation *panimation2 = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeStart];
-    panimation2.fromValue = @(-1);
+    panimation2.fromValue = @(-0.9);
     panimation2.toValue = @(1);
     panimation2.duration = 1.25;
     panimation2.repeatForever = YES;
-    [shape pop_addAnimation:panimation2 forKey:@"r"];
+    panimation2.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    [shape pop_addAnimation:panimation2 forKey:@"p2"];
+//    POPBasicAnimation *rotation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerRotation];
+//  //  rotation.fromValue = @(0);
+//    rotation.toValue = @(M_PI);
+//    rotation.duration = 3.5;
+//    rotation.repeatForever = YES;
+//    [self.layer pop_addAnimation:rotation forKey:@"r"];
     [self.layer addSublayer:shape];
 
 }

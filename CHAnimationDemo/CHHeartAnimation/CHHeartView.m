@@ -64,7 +64,6 @@
         
     }];
     
-    
     [scaleAnimation setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (finished) {
