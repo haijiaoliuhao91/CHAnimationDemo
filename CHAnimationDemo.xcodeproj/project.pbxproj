@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061565B91D546AF800404CD0 /* CHLineWaveController.m */; };
+		061565BD1D546B6900404CD0 /* CHLineWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 061565BC1D546B6900404CD0 /* CHLineWave.m */; };
 		0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */; };
 		0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D9011D30F9160017D9C6 /* CHHeartViewController.m */; };
 		067FDC871CB4A2DF000F52BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC861CB4A2DF000F52BC /* main.m */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061565B81D546AF800404CD0 /* CHLineWaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLineWaveController.h; sourceTree = "<group>"; };
+		061565B91D546AF800404CD0 /* CHLineWaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWaveController.m; sourceTree = "<group>"; };
+		061565BB1D546B6900404CD0 /* CHLineWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLineWave.h; sourceTree = "<group>"; };
+		061565BC1D546B6900404CD0 /* CHLineWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWave.m; sourceTree = "<group>"; };
 		0638D8FD1D30F8EF0017D9C6 /* CHHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartView.h; sourceTree = "<group>"; };
 		0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartView.m; sourceTree = "<group>"; };
 		0638D9001D30F9160017D9C6 /* CHHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartViewController.h; sourceTree = "<group>"; };
@@ -77,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061565B71D546AC300404CD0 /* CHLineWave */ = {
+			isa = PBXGroup;
+			children = (
+				061565BB1D546B6900404CD0 /* CHLineWave.h */,
+				061565BC1D546B6900404CD0 /* CHLineWave.m */,
+			);
+			name = CHLineWave;
+			path = CHAnimationDemo/CHLineWave;
+			sourceTree = "<group>";
+		};
 		0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,7 @@
 		067FDC791CB4A2DE000F52BC = {
 			isa = PBXGroup;
 			children = (
+				061565B71D546AC300404CD0 /* CHLineWave */,
 				0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */,
 				06C516081CB7883E008C1E7E /* CHCircleHUD */,
 				067FDCB11CB4B9BA000F52BC /* CHRadar */,
@@ -113,6 +130,8 @@
 		067FDC841CB4A2DF000F52BC /* CHAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				061565B81D546AF800404CD0 /* CHLineWaveController.h */,
+				061565B91D546AF800404CD0 /* CHLineWaveController.m */,
 				0638D9001D30F9160017D9C6 /* CHHeartViewController.h */,
 				0638D9011D30F9160017D9C6 /* CHHeartViewController.m */,
 				067FDCA01CB4AA23000F52BC /* CHFivePointController.h */,
@@ -328,11 +347,13 @@
 				0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */,
 				06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */,
 				067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */,
+				061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */,
 				067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */,
 				06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */,
 				067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */,
 				067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */,
 				0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */,
+				061565BD1D546B6900404CD0 /* CHLineWave.m in Sources */,
 				067FDCAA1CB4B48D000F52BC /* CHDrewPieView.m in Sources */,
 				067FDC871CB4A2DF000F52BC /* main.m in Sources */,
 				067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */,
