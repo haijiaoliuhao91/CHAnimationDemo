@@ -41,14 +41,14 @@
     }
     __weak typeof(self) weakSelf = self;
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
-    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.75, 0.75)];
+    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(0.95, 0.95)];
     scaleAnimation.springBounciness = 1.5f;
-    scaleAnimation.springSpeed = 0.4;
+    scaleAnimation.springSpeed = 0.7;
     //    scaleAnimation.repeatForever = YES;
     POPSpringAnimation *scaleAnimation2 = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation2.toValue = [NSValue valueWithCGSize:CGSizeMake(1.05,1.05)];
-    scaleAnimation2.springBounciness = 4.f;
-    scaleAnimation2.springSpeed = 0.8;
+    scaleAnimation2.springBounciness = 1.f;
+    scaleAnimation2.springSpeed = 0.6;
     
     
     POPSpringAnimation *scaleAnimation3 = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
@@ -56,7 +56,7 @@
     scaleAnimation3.springBounciness = 5.f;
     scaleAnimation3.repeatCount = 2;
     scaleAnimation3.springSpeed = 1.0;
-    [scaleAnimation3 setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
+    [scaleAnimation2 setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (finished) {
             [strongSelf.imageView.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
@@ -68,12 +68,12 @@
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (finished) {
             [strongSelf.layer pop_addAnimation:scaleAnimation2 forKey:@"scaleAnimation2"];
-            [strongSelf.layer pop_addAnimation:scaleAnimation3 forKey:@"scaleAnimation3"];
+        //    [strongSelf.layer pop_addAnimation:scaleAnimation3 forKey:@"scaleAnimation3"];
         }
     }];
     
-    self.graceTimer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(spring) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:self.graceTimer forMode:NSDefaultRunLoopMode];
+//    self.graceTimer = [NSTimer timerWithTimeInterval:5 target:self selector:@selector(spring) userInfo:nil repeats:YES];
+//    [[NSRunLoop currentRunLoop] addTimer:self.graceTimer forMode:NSDefaultRunLoopMode];
     
     
     [self.imageView.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];

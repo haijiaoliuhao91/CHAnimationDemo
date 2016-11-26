@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061565B91D546AF800404CD0 /* CHLineWaveController.m */; };
-		061565BD1D546B6900404CD0 /* CHLineWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 061565BC1D546B6900404CD0 /* CHLineWave.m */; };
-		0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */; };
 		0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D9011D30F9160017D9C6 /* CHHeartViewController.m */; };
+		065ED5E01DE9658600D999A2 /* CHCircleHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5CD1DE9658600D999A2 /* CHCircleHUD.m */; };
+		065ED5E11DE9658600D999A2 /* CHDrewPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D01DE9658600D999A2 /* CHDrewPieView.m */; };
+		065ED5E21DE9658600D999A2 /* CHFivePointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D31DE9658600D999A2 /* CHFivePointView.m */; };
+		065ED5E31DE9658600D999A2 /* CHHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D61DE9658600D999A2 /* CHHeartView.m */; };
+		065ED5E41DE9658600D999A2 /* CHLineWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D91DE9658600D999A2 /* CHLineWave.m */; };
+		065ED5E51DE9658600D999A2 /* CHNumbersAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5DC1DE9658600D999A2 /* CHNumbersAnimation.m */; };
+		065ED5E61DE9658600D999A2 /* CHRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5DF1DE9658600D999A2 /* CHRadar.m */; };
+		065ED5E91DE9659400D999A2 /* CHBrokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5E81DE9659400D999A2 /* CHBrokenLine.m */; };
 		067FDC871CB4A2DF000F52BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC861CB4A2DF000F52BC /* main.m */; };
 		067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC891CB4A2DF000F52BC /* AppDelegate.m */; };
 		067FDC8D1CB4A2DF000F52BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDC8C1CB4A2DF000F52BC /* ViewController.m */; };
@@ -18,26 +24,36 @@
 		067FDC921CB4A2DF000F52BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067FDC911CB4A2DF000F52BC /* Assets.xcassets */; };
 		067FDC951CB4A2DF000F52BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067FDC931CB4A2DF000F52BC /* LaunchScreen.storyboard */; };
 		067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCA11CB4AA23000F52BC /* CHFivePointController.m */; };
-		067FDCA61CB4AA91000F52BC /* CHFivePointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCA51CB4AA91000F52BC /* CHFivePointView.m */; };
-		067FDCAA1CB4B48D000F52BC /* CHDrewPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCA91CB4B48D000F52BC /* CHDrewPieView.m */; };
 		067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAC1CB4B4B8000F52BC /* CHPieController.m */; };
 		067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */; };
-		067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 067FDCB31CB4B9C7000F52BC /* CHRadar.m */; };
 		06C1DF281D324F2000C25FE3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1DF271D324F2000C25FE3 /* GLKit.framework */; };
-		06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160A1CB78850008C1E7E /* CHCircleHUD.m */; };
 		06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */; };
-		A786DBC59475621FAE2BAF5B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C5CC2A42C826BF5CC8CCD /* libPods.a */; };
+		06E26E501DE995D10047E317 /* CHHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E26E4F1DE995D10047E317 /* CHHistogramView.m */; };
+		06E26E531DE997D70047E317 /* CHDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E26E521DE997D70047E317 /* CHDataViewController.m */; };
+		7F15AA89B168D988DBD333EB /* libPods-CHAnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE811B338B356FBEAA09F4 /* libPods-CHAnimationDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		061565B81D546AF800404CD0 /* CHLineWaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLineWaveController.h; sourceTree = "<group>"; };
 		061565B91D546AF800404CD0 /* CHLineWaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWaveController.m; sourceTree = "<group>"; };
-		061565BB1D546B6900404CD0 /* CHLineWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLineWave.h; sourceTree = "<group>"; };
-		061565BC1D546B6900404CD0 /* CHLineWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWave.m; sourceTree = "<group>"; };
-		0638D8FD1D30F8EF0017D9C6 /* CHHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartView.h; sourceTree = "<group>"; };
-		0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartView.m; sourceTree = "<group>"; };
 		0638D9001D30F9160017D9C6 /* CHHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartViewController.h; sourceTree = "<group>"; };
 		0638D9011D30F9160017D9C6 /* CHHeartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartViewController.m; sourceTree = "<group>"; };
+		065ED5CC1DE9658600D999A2 /* CHCircleHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleHUD.h; sourceTree = "<group>"; };
+		065ED5CD1DE9658600D999A2 /* CHCircleHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleHUD.m; sourceTree = "<group>"; };
+		065ED5CF1DE9658600D999A2 /* CHDrewPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDrewPieView.h; sourceTree = "<group>"; };
+		065ED5D01DE9658600D999A2 /* CHDrewPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDrewPieView.m; sourceTree = "<group>"; };
+		065ED5D21DE9658600D999A2 /* CHFivePointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFivePointView.h; sourceTree = "<group>"; };
+		065ED5D31DE9658600D999A2 /* CHFivePointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFivePointView.m; sourceTree = "<group>"; };
+		065ED5D51DE9658600D999A2 /* CHHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartView.h; sourceTree = "<group>"; };
+		065ED5D61DE9658600D999A2 /* CHHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartView.m; sourceTree = "<group>"; };
+		065ED5D81DE9658600D999A2 /* CHLineWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLineWave.h; sourceTree = "<group>"; };
+		065ED5D91DE9658600D999A2 /* CHLineWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWave.m; sourceTree = "<group>"; };
+		065ED5DB1DE9658600D999A2 /* CHNumbersAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNumbersAnimation.h; sourceTree = "<group>"; };
+		065ED5DC1DE9658600D999A2 /* CHNumbersAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNumbersAnimation.m; sourceTree = "<group>"; };
+		065ED5DE1DE9658600D999A2 /* CHRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRadar.h; sourceTree = "<group>"; };
+		065ED5DF1DE9658600D999A2 /* CHRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadar.m; sourceTree = "<group>"; };
+		065ED5E71DE9659400D999A2 /* CHBrokenLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHBrokenLine.h; sourceTree = "<group>"; };
+		065ED5E81DE9659400D999A2 /* CHBrokenLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHBrokenLine.m; sourceTree = "<group>"; };
 		067FDC821CB4A2DF000F52BC /* CHAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067FDC861CB4A2DF000F52BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		067FDC881CB4A2DF000F52BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,24 +66,20 @@
 		067FDC961CB4A2DF000F52BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		067FDCA01CB4AA23000F52BC /* CHFivePointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFivePointController.h; sourceTree = "<group>"; };
 		067FDCA11CB4AA23000F52BC /* CHFivePointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFivePointController.m; sourceTree = "<group>"; };
-		067FDCA41CB4AA91000F52BC /* CHFivePointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFivePointView.h; sourceTree = "<group>"; };
-		067FDCA51CB4AA91000F52BC /* CHFivePointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFivePointView.m; sourceTree = "<group>"; };
-		067FDCA81CB4B48D000F52BC /* CHDrewPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDrewPieView.h; sourceTree = "<group>"; };
-		067FDCA91CB4B48D000F52BC /* CHDrewPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDrewPieView.m; sourceTree = "<group>"; };
 		067FDCAB1CB4B4B8000F52BC /* CHPieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPieController.h; sourceTree = "<group>"; };
 		067FDCAC1CB4B4B8000F52BC /* CHPieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPieController.m; sourceTree = "<group>"; };
 		067FDCAE1CB4B6AE000F52BC /* CHRadarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRadarController.h; sourceTree = "<group>"; };
 		067FDCAF1CB4B6AE000F52BC /* CHRadarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadarController.m; sourceTree = "<group>"; };
-		067FDCB21CB4B9C7000F52BC /* CHRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRadar.h; sourceTree = "<group>"; };
-		067FDCB31CB4B9C7000F52BC /* CHRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRadar.m; sourceTree = "<group>"; };
 		06C1DF271D324F2000C25FE3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		06C516091CB78850008C1E7E /* CHCircleHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleHUD.h; sourceTree = "<group>"; };
-		06C5160A1CB78850008C1E7E /* CHCircleHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleHUD.m; sourceTree = "<group>"; };
 		06C5160C1CB788EB008C1E7E /* CHCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleViewController.h; sourceTree = "<group>"; };
 		06C5160D1CB788EB008C1E7E /* CHCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleViewController.m; sourceTree = "<group>"; };
-		E3001B17A5E7637CA8161B79 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E475E4DC56E048C294388E6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FA5C5CC2A42C826BF5CC8CCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E26E4E1DE995D10047E317 /* CHHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHistogramView.h; sourceTree = "<group>"; };
+		06E26E4F1DE995D10047E317 /* CHHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHistogramView.m; sourceTree = "<group>"; };
+		06E26E511DE997D70047E317 /* CHDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDataViewController.h; sourceTree = "<group>"; };
+		06E26E521DE997D70047E317 /* CHDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDataViewController.m; sourceTree = "<group>"; };
+		785C92A976004DBEE30DFC85 /* Pods-CHAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHAnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHAnimationDemo/Pods-CHAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CE658AA12097F101FBF85519 /* Pods-CHAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHAnimationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHAnimationDemo/Pods-CHAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CFDE811B338B356FBEAA09F4 /* libPods-CHAnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CHAnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,46 +88,110 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C1DF281D324F2000C25FE3 /* GLKit.framework in Frameworks */,
-				A786DBC59475621FAE2BAF5B /* libPods.a in Frameworks */,
+				7F15AA89B168D988DBD333EB /* libPods-CHAnimationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		061565B71D546AC300404CD0 /* CHLineWave */ = {
+		065ED5C91DE9658600D999A2 /* CHDrewKit */ = {
 			isa = PBXGroup;
 			children = (
-				061565BB1D546B6900404CD0 /* CHLineWave.h */,
-				061565BC1D546B6900404CD0 /* CHLineWave.m */,
+				06E26E4D1DE995BF0047E317 /* CHHistogram */,
+				065ED5CA1DE9658600D999A2 /* CHBrokenLine */,
+				065ED5CB1DE9658600D999A2 /* CHCircleHUD */,
+				065ED5CE1DE9658600D999A2 /* CHDrewPieView */,
+				065ED5D11DE9658600D999A2 /* CHFivePoint */,
+				065ED5D41DE9658600D999A2 /* CHHeartAnimation */,
+				065ED5D71DE9658600D999A2 /* CHLineWave */,
+				065ED5DA1DE9658600D999A2 /* CHNumbersAnimation */,
+				065ED5DD1DE9658600D999A2 /* CHRadar */,
 			);
-			name = CHLineWave;
-			path = CHAnimationDemo/CHLineWave;
+			name = CHDrewKit;
+			path = CHAnimationDemo/CHDrewKit;
 			sourceTree = "<group>";
 		};
-		0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */ = {
+		065ED5CA1DE9658600D999A2 /* CHBrokenLine */ = {
 			isa = PBXGroup;
 			children = (
-				0638D8FD1D30F8EF0017D9C6 /* CHHeartView.h */,
-				0638D8FE1D30F8EF0017D9C6 /* CHHeartView.m */,
+				065ED5E71DE9659400D999A2 /* CHBrokenLine.h */,
+				065ED5E81DE9659400D999A2 /* CHBrokenLine.m */,
 			);
-			name = CHHeartAnimation;
-			path = CHAnimationDemo/CHHeartAnimation;
+			path = CHBrokenLine;
+			sourceTree = "<group>";
+		};
+		065ED5CB1DE9658600D999A2 /* CHCircleHUD */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5CC1DE9658600D999A2 /* CHCircleHUD.h */,
+				065ED5CD1DE9658600D999A2 /* CHCircleHUD.m */,
+			);
+			path = CHCircleHUD;
+			sourceTree = "<group>";
+		};
+		065ED5CE1DE9658600D999A2 /* CHDrewPieView */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5CF1DE9658600D999A2 /* CHDrewPieView.h */,
+				065ED5D01DE9658600D999A2 /* CHDrewPieView.m */,
+			);
+			path = CHDrewPieView;
+			sourceTree = "<group>";
+		};
+		065ED5D11DE9658600D999A2 /* CHFivePoint */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5D21DE9658600D999A2 /* CHFivePointView.h */,
+				065ED5D31DE9658600D999A2 /* CHFivePointView.m */,
+			);
+			path = CHFivePoint;
+			sourceTree = "<group>";
+		};
+		065ED5D41DE9658600D999A2 /* CHHeartAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5D51DE9658600D999A2 /* CHHeartView.h */,
+				065ED5D61DE9658600D999A2 /* CHHeartView.m */,
+			);
+			path = CHHeartAnimation;
+			sourceTree = "<group>";
+		};
+		065ED5D71DE9658600D999A2 /* CHLineWave */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5D81DE9658600D999A2 /* CHLineWave.h */,
+				065ED5D91DE9658600D999A2 /* CHLineWave.m */,
+			);
+			path = CHLineWave;
+			sourceTree = "<group>";
+		};
+		065ED5DA1DE9658600D999A2 /* CHNumbersAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5DB1DE9658600D999A2 /* CHNumbersAnimation.h */,
+				065ED5DC1DE9658600D999A2 /* CHNumbersAnimation.m */,
+			);
+			path = CHNumbersAnimation;
+			sourceTree = "<group>";
+		};
+		065ED5DD1DE9658600D999A2 /* CHRadar */ = {
+			isa = PBXGroup;
+			children = (
+				065ED5DE1DE9658600D999A2 /* CHRadar.h */,
+				065ED5DF1DE9658600D999A2 /* CHRadar.m */,
+			);
+			path = CHRadar;
 			sourceTree = "<group>";
 		};
 		067FDC791CB4A2DE000F52BC = {
 			isa = PBXGroup;
 			children = (
-				061565B71D546AC300404CD0 /* CHLineWave */,
-				0638D8FC1D30F6E90017D9C6 /* CHHeartAnimation */,
-				06C516081CB7883E008C1E7E /* CHCircleHUD */,
-				067FDCB11CB4B9BA000F52BC /* CHRadar */,
-				067FDCA71CB4B48D000F52BC /* CHDrewPieView */,
-				067FDCA31CB4AA42000F52BC /* CHFivePoint */,
+				065ED5C91DE9658600D999A2 /* CHDrewKit */,
 				067FDC841CB4A2DF000F52BC /* CHAnimationDemo */,
 				067FDC831CB4A2DF000F52BC /* Products */,
-				A96BA1B32ADA230B639B71EA /* Pods */,
 				EC5C5D6EBE32A14DE0F20923 /* Frameworks */,
+				84F321CDECFF7BC1668CB6A9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +206,8 @@
 		067FDC841CB4A2DF000F52BC /* CHAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				06E26E511DE997D70047E317 /* CHDataViewController.h */,
+				06E26E521DE997D70047E317 /* CHDataViewController.m */,
 				061565B81D546AF800404CD0 /* CHLineWaveController.h */,
 				061565B91D546AF800404CD0 /* CHLineWaveController.m */,
 				0638D9001D30F9160017D9C6 /* CHHeartViewController.h */,
@@ -163,51 +241,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		067FDCA31CB4AA42000F52BC /* CHFivePoint */ = {
+		06E26E4D1DE995BF0047E317 /* CHHistogram */ = {
 			isa = PBXGroup;
 			children = (
-				067FDCA41CB4AA91000F52BC /* CHFivePointView.h */,
-				067FDCA51CB4AA91000F52BC /* CHFivePointView.m */,
+				06E26E4E1DE995D10047E317 /* CHHistogramView.h */,
+				06E26E4F1DE995D10047E317 /* CHHistogramView.m */,
 			);
-			name = CHFivePoint;
-			path = CHAnimationDemo/CHFivePoint;
+			path = CHHistogram;
 			sourceTree = "<group>";
 		};
-		067FDCA71CB4B48D000F52BC /* CHDrewPieView */ = {
+		84F321CDECFF7BC1668CB6A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				067FDCA81CB4B48D000F52BC /* CHDrewPieView.h */,
-				067FDCA91CB4B48D000F52BC /* CHDrewPieView.m */,
-			);
-			name = CHDrewPieView;
-			path = CHAnimationDemo/CHDrewPieView;
-			sourceTree = "<group>";
-		};
-		067FDCB11CB4B9BA000F52BC /* CHRadar */ = {
-			isa = PBXGroup;
-			children = (
-				067FDCB21CB4B9C7000F52BC /* CHRadar.h */,
-				067FDCB31CB4B9C7000F52BC /* CHRadar.m */,
-			);
-			name = CHRadar;
-			path = CHAnimationDemo/CHRadar;
-			sourceTree = "<group>";
-		};
-		06C516081CB7883E008C1E7E /* CHCircleHUD */ = {
-			isa = PBXGroup;
-			children = (
-				06C516091CB78850008C1E7E /* CHCircleHUD.h */,
-				06C5160A1CB78850008C1E7E /* CHCircleHUD.m */,
-			);
-			name = CHCircleHUD;
-			path = CHAnimationDemo/CHCircleHUD;
-			sourceTree = "<group>";
-		};
-		A96BA1B32ADA230B639B71EA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E3001B17A5E7637CA8161B79 /* Pods.debug.xcconfig */,
-				E475E4DC56E048C294388E6D /* Pods.release.xcconfig */,
+				CE658AA12097F101FBF85519 /* Pods-CHAnimationDemo.debug.xcconfig */,
+				785C92A976004DBEE30DFC85 /* Pods-CHAnimationDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -216,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				06C1DF271D324F2000C25FE3 /* GLKit.framework */,
-				FA5C5CC2A42C826BF5CC8CCD /* libPods.a */,
+				CFDE811B338B356FBEAA09F4 /* libPods-CHAnimationDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,12 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 067FDC991CB4A2DF000F52BC /* Build configuration list for PBXNativeTarget "CHAnimationDemo" */;
 			buildPhases = (
-				B6A8B978E7C721BAFD170733 /* Check Pods Manifest.lock */,
+				139BC04BD2FA4E346C8CA853 /* [CP] Check Pods Manifest.lock */,
 				067FDC7E1CB4A2DE000F52BC /* Sources */,
 				067FDC7F1CB4A2DE000F52BC /* Frameworks */,
 				067FDC801CB4A2DE000F52BC /* Resources */,
-				7F5D83A84EA060CDD804AFB0 /* Embed Pods Frameworks */,
-				C15B1E16D82E1B7F75F4FA8B /* Copy Pods Resources */,
+				8DF60778072A8CD017EE305D /* [CP] Embed Pods Frameworks */,
+				66BFD9938460EEFAAA84B511 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,49 +337,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7F5D83A84EA060CDD804AFB0 /* Embed Pods Frameworks */ = {
+		139BC04BD2FA4E346C8CA853 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B6A8B978E7C721BAFD170733 /* Check Pods Manifest.lock */ = {
+		66BFD9938460EEFAAA84B511 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CHAnimationDemo/Pods-CHAnimationDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C15B1E16D82E1B7F75F4FA8B /* Copy Pods Resources */ = {
+		8DF60778072A8CD017EE305D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CHAnimationDemo/Pods-CHAnimationDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -343,20 +390,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				067FDC8D1CB4A2DF000F52BC /* ViewController.m in Sources */,
-				067FDCA61CB4AA91000F52BC /* CHFivePointView.m in Sources */,
-				0638D8FF1D30F8EF0017D9C6 /* CHHeartView.m in Sources */,
+				065ED5E11DE9658600D999A2 /* CHDrewPieView.m in Sources */,
 				06C5160E1CB788EB008C1E7E /* CHCircleViewController.m in Sources */,
+				065ED5E91DE9659400D999A2 /* CHBrokenLine.m in Sources */,
 				067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */,
 				061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */,
+				065ED5E01DE9658600D999A2 /* CHCircleHUD.m in Sources */,
+				065ED5E51DE9658600D999A2 /* CHNumbersAnimation.m in Sources */,
+				065ED5E31DE9658600D999A2 /* CHHeartView.m in Sources */,
+				06E26E531DE997D70047E317 /* CHDataViewController.m in Sources */,
 				067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */,
-				06C5160B1CB78850008C1E7E /* CHCircleHUD.m in Sources */,
+				065ED5E61DE9658600D999A2 /* CHRadar.m in Sources */,
 				067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */,
-				067FDCB41CB4B9C7000F52BC /* CHRadar.m in Sources */,
 				0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */,
-				061565BD1D546B6900404CD0 /* CHLineWave.m in Sources */,
-				067FDCAA1CB4B48D000F52BC /* CHDrewPieView.m in Sources */,
+				06E26E501DE995D10047E317 /* CHHistogramView.m in Sources */,
 				067FDC871CB4A2DF000F52BC /* main.m in Sources */,
+				065ED5E21DE9658600D999A2 /* CHFivePointView.m in Sources */,
 				067FDCB01CB4B6AE000F52BC /* CHRadarController.m in Sources */,
+				065ED5E41DE9658600D999A2 /* CHLineWave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +515,7 @@
 		};
 		067FDC9A1CB4A2DF000F52BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3001B17A5E7637CA8161B79 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = CE658AA12097F101FBF85519 /* Pods-CHAnimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CHAnimationDemo/Info.plist;
@@ -476,7 +527,7 @@
 		};
 		067FDC9B1CB4A2DF000F52BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E475E4DC56E048C294388E6D /* Pods.release.xcconfig */;
+			baseConfigurationReference = 785C92A976004DBEE30DFC85 /* Pods-CHAnimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CHAnimationDemo/Info.plist;

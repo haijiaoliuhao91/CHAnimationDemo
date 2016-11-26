@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CHLineWaveController.h"
 
 @interface ViewController ()
 @property (strong ,nonatomic) NSArray <NSString *>*data;
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD",@"Heart Demo",@"CHLineWave"];
+    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD",@"Heart Demo",@"CHLineWave",@"CHData"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -51,6 +50,8 @@
         [self performSegueWithIdentifier:@"Heart" sender:self];
     }else if(indexPath.row == 5){
         PushController(@"CHLineWaveController");
+    }else if(indexPath.row == 6){
+        PushController(@"CHDataViewController");
     }
 
 }
