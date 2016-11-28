@@ -20,4 +20,4 @@
 ![image](/Gifs/wave.gif)
 
 ## CHBrokenLine 折线图的绘制 && CHHistogram 图表的绘制
-![image](/Gifs/radar.gif)
+![image](/Gifs/CHData.gif)
