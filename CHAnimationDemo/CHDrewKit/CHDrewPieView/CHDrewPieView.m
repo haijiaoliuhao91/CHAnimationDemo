@@ -32,8 +32,7 @@
     }
     return self;
 }
-- (void)drawRect:(CGRect)rect {
-    // 拼接路径
+- (void)show:(BOOL)animation{
     __block CGFloat startAngle = -90.0f;
     [_scales enumerateObjectsUsingBlock:^(NSNumber  *_Nonnull scale, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat startA = DEGREES_TO_RADIANS(startAngle);
@@ -41,23 +40,30 @@
         startAngle  += angle;
         CGFloat endA = DEGREES_TO_RADIANS(startAngle);
         UIColor *color = (_colors.count > idx)?_colors[idx]:[UIColor blackColor];
- 
+        
         [self drewPieWithStartAngle:startA endAngle:endA fillColor:color];
-
+        
     }];
-    POPSpringAnimation *panimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
-  //  panimation.fromValue = @(0);
-    panimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(.0, 0)];
-  //  panimation.toValue = @(1);
-    panimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
-    panimation.springSpeed = 3.25;
-    panimation.dynamicsTension = 10.f;
-    panimation.springBounciness = 5.5f;
-//    panimation.repeatForever = YES;
-   // panimation.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
-    [self.layer pop_addAnimation:panimation forKey:@"p"];
-    
+    if (animation) {
+        POPSpringAnimation *panimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+        //  panimation.fromValue = @(0);
+        panimation.fromValue = [NSValue valueWithCGSize:CGSizeMake(.0, 0)];
+        //  panimation.toValue = @(1);
+        panimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
+        panimation.springSpeed = 3.25;
+        panimation.dynamicsTension = 10.f;
+        panimation.springBounciness = 5.5f;
+        //    panimation.repeatForever = YES;
+        // panimation.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+        [self.layer pop_addAnimation:panimation forKey:@"p"];
+    }
+
 }
+//- (void)drawRect:(CGRect)rect {
+//    // 拼接路径
+//
+//    
+//}
 // 根据条件绘制饼图
 - (void)drewPieWithStartAngle:(CGFloat)start
                      endAngle:(CGFloat)end
@@ -72,12 +78,12 @@
     shape.path = path.CGPath;
     shape.fillColor = color.CGColor;
     [self.layer addSublayer:shape];
-    
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation.fromValue = @(0.8);
-    animation.toValue = @(0.2);
-    animation.duration = 5.5;
-    [shape addAnimation:animation forKey:@"begin"];
+//    
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+//    animation.fromValue = @(0.8);
+//    animation.toValue = @(0.2);
+//    animation.duration = 5.5;
+//    [shape addAnimation:animation forKey:@"begin"];
     
 
 }

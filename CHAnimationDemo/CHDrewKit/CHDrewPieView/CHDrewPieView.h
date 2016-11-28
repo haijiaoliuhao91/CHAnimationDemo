@@ -20,4 +20,5 @@
                        colors:(NSArray <UIColor *>*)colors;
 - (instancetype)initWithFrame:(CGRect)frame __unavailable;
 - (instancetype)init __unavailable;
+- (void)show:(BOOL)animation;
 @end
