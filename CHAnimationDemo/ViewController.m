@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD",@"Heart Demo",@"CHLineWave",@"CHData"];
+    self.data = @[@"FivePointStartDemo",@"Radar Demo",@"Pie Demo",@"Circle HUD",@"Heart Demo",@"CHLineWave",@"CHData",@"Flip Button"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -30,7 +30,9 @@
     return cell;
     
 }
-#define PushController(name)  [self.navigationController pushViewController:[[NSClassFromString(name) alloc]init] animated:YES];
+#define PushController(name,index)  else if(indexPath.row == index){\
+[self.navigationController pushViewController:[[NSClassFromString(name) alloc]init] animated:YES];\
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
         
@@ -48,11 +50,11 @@
     }else if(indexPath.row == 4){
         
         [self performSegueWithIdentifier:@"Heart" sender:self];
-    }else if(indexPath.row == 5){
-        PushController(@"CHLineWaveController");
-    }else if(indexPath.row == 6){
-        PushController(@"CHDataViewController");
     }
+    PushController(@"CHLineWaveController",5)
+    PushController(@"CHDataViewController",6)
+    PushController(@"CHFlipViewController",7)
+
 
 }
 @end

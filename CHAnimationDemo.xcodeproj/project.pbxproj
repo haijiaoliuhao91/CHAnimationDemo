@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061565B91D546AF800404CD0 /* CHLineWaveController.m */; };
 		0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0638D9011D30F9160017D9C6 /* CHHeartViewController.m */; };
+		0639EB041E1F7E4D0072E558 /* CHFlipButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639EB031E1F7E4D0072E558 /* CHFlipButton.m */; };
+		0639EB071E1F83050072E558 /* CHFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639EB061E1F83050072E558 /* CHFlipViewController.m */; };
 		065ED5E01DE9658600D999A2 /* CHCircleHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5CD1DE9658600D999A2 /* CHCircleHUD.m */; };
 		065ED5E11DE9658600D999A2 /* CHDrewPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D01DE9658600D999A2 /* CHDrewPieView.m */; };
 		065ED5E21DE9658600D999A2 /* CHFivePointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 065ED5D31DE9658600D999A2 /* CHFivePointView.m */; };
@@ -38,6 +40,10 @@
 		061565B91D546AF800404CD0 /* CHLineWaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLineWaveController.m; sourceTree = "<group>"; };
 		0638D9001D30F9160017D9C6 /* CHHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHHeartViewController.h; sourceTree = "<group>"; };
 		0638D9011D30F9160017D9C6 /* CHHeartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHHeartViewController.m; sourceTree = "<group>"; };
+		0639EB021E1F7E4D0072E558 /* CHFlipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFlipButton.h; sourceTree = "<group>"; };
+		0639EB031E1F7E4D0072E558 /* CHFlipButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFlipButton.m; sourceTree = "<group>"; };
+		0639EB051E1F83050072E558 /* CHFlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFlipViewController.h; sourceTree = "<group>"; };
+		0639EB061E1F83050072E558 /* CHFlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFlipViewController.m; sourceTree = "<group>"; };
 		065ED5CC1DE9658600D999A2 /* CHCircleHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleHUD.h; sourceTree = "<group>"; };
 		065ED5CD1DE9658600D999A2 /* CHCircleHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleHUD.m; sourceTree = "<group>"; };
 		065ED5CF1DE9658600D999A2 /* CHDrewPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDrewPieView.h; sourceTree = "<group>"; };
@@ -95,9 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0639EB011E1F7E2F0072E558 /* CHFlipButton */ = {
+			isa = PBXGroup;
+			children = (
+				0639EB021E1F7E4D0072E558 /* CHFlipButton.h */,
+				0639EB031E1F7E4D0072E558 /* CHFlipButton.m */,
+			);
+			path = CHFlipButton;
+			sourceTree = "<group>";
+		};
 		065ED5C91DE9658600D999A2 /* CHDrewKit */ = {
 			isa = PBXGroup;
 			children = (
+				0639EB011E1F7E2F0072E558 /* CHFlipButton */,
 				06E26E4D1DE995BF0047E317 /* CHHistogram */,
 				065ED5CA1DE9658600D999A2 /* CHBrokenLine */,
 				065ED5CB1DE9658600D999A2 /* CHCircleHUD */,
@@ -229,6 +245,8 @@
 				067FDC931CB4A2DF000F52BC /* LaunchScreen.storyboard */,
 				067FDC961CB4A2DF000F52BC /* Info.plist */,
 				067FDC851CB4A2DF000F52BC /* Supporting Files */,
+				0639EB051E1F83050072E558 /* CHFlipViewController.h */,
+				0639EB061E1F83050072E558 /* CHFlipViewController.m */,
 			);
 			path = CHAnimationDemo;
 			sourceTree = "<group>";
@@ -396,10 +414,12 @@
 				067FDCA21CB4AA23000F52BC /* CHFivePointController.m in Sources */,
 				061565BA1D546AF800404CD0 /* CHLineWaveController.m in Sources */,
 				065ED5E01DE9658600D999A2 /* CHCircleHUD.m in Sources */,
+				0639EB041E1F7E4D0072E558 /* CHFlipButton.m in Sources */,
 				065ED5E51DE9658600D999A2 /* CHNumbersAnimation.m in Sources */,
 				065ED5E31DE9658600D999A2 /* CHHeartView.m in Sources */,
 				06E26E531DE997D70047E317 /* CHDataViewController.m in Sources */,
 				067FDC8A1CB4A2DF000F52BC /* AppDelegate.m in Sources */,
+				0639EB071E1F83050072E558 /* CHFlipViewController.m in Sources */,
 				065ED5E61DE9658600D999A2 /* CHRadar.m in Sources */,
 				067FDCAD1CB4B4B8000F52BC /* CHPieController.m in Sources */,
 				0638D9021D30F9160017D9C6 /* CHHeartViewController.m in Sources */,
